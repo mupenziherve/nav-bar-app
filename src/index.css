@@ -280,12 +280,13 @@ color:  var(--primary-700);
 transform: rotate(90deg);
 
 }
+
 .links a{
   color: var(--grey-700);
   font-size: 1rem;
   text-transform: capitalize;
   letter-spacing: var(--letterSpacing);
-  display: block;
+   display: block;
   padding: 0.5rem 1rem;
 }
 .links a:hover {
@@ -293,4 +294,14 @@ transform: rotate(90deg);
   background: var(--primary-100);
   color: var(--primary-600);
   padding-left: 1.5rem;
+}
+.links-container{
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.show-container {
+  height: 10rem;
+
 }

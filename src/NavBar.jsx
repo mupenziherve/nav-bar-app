@@ -14,13 +14,13 @@ const NavBar = () => {
     <nav>
       <div className="nav-center">
         <div className="nav-header">
-             <img src={logo} className="logo" alt="logo" />
+          <img src={logo} className="logo" alt="logo" />
           <button className="nav-toggle" onClick={toggleLinks}>
             <FaBars />
           </button>
         </div>
-        {showLinks && (
-          <div className="links-container">
+          <div className={showLinks ? 'links-container show-container':
+            'links-container'}>
             <ul className="links">
               {links.map((link) => {
                 const { id, url, text } = link
@@ -32,7 +32,6 @@ const NavBar = () => {
               })}
             </ul>
           </div>
-        )};
       </div>
     </nav>
   )
