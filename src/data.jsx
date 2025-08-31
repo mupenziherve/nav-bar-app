@@ -5,7 +5,7 @@ export const links = [
     url: '/',
     text: 'home',
   },
-   {
+  {
     id: 2,
     url: '/about',
     text: 'about',
@@ -25,7 +25,12 @@ export const links = [
     url: '/profile',
     text: 'profile',
   },
-];
+  {
+    id: 6,
+    url: 'extra',
+    text: 'extra',
+  },
+]
 
 export const social = [
   {
